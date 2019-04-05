@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+ 
+<div class="block1">
+<img src="http://faculdadesenaidaparaiba.com.br/imagens/logotipo.png">
+<h1>Página de cadastro</h1>
+  <h2>Insira seus dados e vamos realizar sua inscrição!</h2>
+  <form class="form-signin">
+        <label for="inputNome" class="sr-only">Nome</label>
+        <input type="name" name="inputNome" id="inputNome" class="form-control" placeholder="Nome" required autofocus></br>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email" required autofocus></br>
+        <label for="inputSenha" class="sr-only">Password</label>
+        <input type="password" name="inputSenha" id="inputSenha" class="form-control" placeholder="Senha" required></br>
+        
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Cadastrar</button>
+	</form>
+</div>
+{% endblock %}
